@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main id="main">
+  
+  <div class="container">
+
+    <div class="row topspace">
+      <img width="375" class="about-image1" src={{ .Site.Params.aboutImage1 }}>
+      <p>{{ .Content }}</p>	
+    </div>
+    
+    <div class="row bottomspace">
+      <img width="500" class="about-image2" src={{ .Site.Params.aboutImage2 }}>
+      <p>{{ "about_extra.md" | readFile | markdownify }}</p>
+    </div>
+
+  </div> <!-- /container -->
+  
+</main>
+{{ end }}

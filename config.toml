@@ -1,0 +1,146 @@
+baseURL = "https://kylelang.github.io/"
+languageCode = "en"
+title = "Kyle M. Lang"
+theme = "hugo-initio"
+
+[params]
+    name = "Kyle M. Lang"
+    description = "Teacher + Researcher + Developer + Consultant"
+    email = "k.m.lang@uu.nl"
+    phone = ""
+    orcid = "0000-0001-5340-7849"
+    address = "Sjoerd Groenmangebouw, Padualaan 14, 3584 CH Utrecht"
+    addressLink = "https://goo.gl/maps/zx9oUH6ccaoxEgQf6"
+    year = 2021
+    avatar = "/images/headshot.jpg"
+    avatarclass = "circle"
+    background = ""
+    banner = "/images/header2.jpg"
+    favicon = "/images/favicons/favicon-16x16.png"
+    aboutImage1 = "/images/standplaats_crop.jpg"
+    aboutImage2 = "/images/prague_ice_cream.jpg"
+    
+    DateForm = "2006-01-02"
+    author = "Sergey Pozhilov (GetTemplate.com)"
+
+    showSubheader = true
+    showActivities = true
+    showRecentWorks = false
+    showDownloads = false
+    showClients = false
+
+    showFooterContact = true
+    showFooterFollowMe = true
+    showFooterTextWidget = false
+    showFooterFormWidget = false
+       
+[[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "CV"
+    url = "/cv.pdf"
+    weight = 3
+
+[[menu.main]]
+    identifier = "activities"
+    name = "Activities"
+    url = "/home/activities/"
+    weight = 4
+
+[[menu.main]]
+    identifier = "teaching"
+    name = "Teaching"
+    url = "/teaching"
+    parent = "activities"
+    weight = 1
+
+[[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = "/research"
+    parent = "activities"
+    weight = 2
+
+[[menu.main]]
+    identifier = "development"
+    name = "Development"
+    url = "/development"
+    parent = "activities"
+    weight = 3
+
+[[menu.main]]
+    identifier = "consulting"
+    name = "Consulting"
+    url = "/consulting"
+    parent = "activities"
+    weight = 4
+
+#[params.disqus]
+#    site = "hugo-initio-site.disqus.com"
+
+#[params.sharethis]
+#    property = "123456789012345678901234"
+#    custom = true
+
+#[params.google.analytics]
+#    trackerID = "GA-000000000-0"
+
+[[params.social]]
+    title = "google scholar"
+    url = "https://scholar.google.com/citations?user=GyGQPjkAAAAJ&hl=en"
+    icon = "ai ai-google-scholar"
+    footer = true
+    sharethis = false
+    network = "googlescholar"
+[[params.social]]
+    title = "research gate"
+    url = "https://www.researchgate.net/profile/Kyle-Lang-2"
+    icon = "ai ai-researchgate"
+    footer = true
+    sharethis = false
+    network = "researchgate"
+[[params.social]]
+    title = "publons"
+    url = "https://publons.com/researcher/1353075/kyle-m-lang/"
+    icon = "ai ai-publons"
+    footer = true
+    sharethis = false
+    network = ""
+[[params.social]]
+    title = "orcid"
+    url = "https://orcid.org/0000-0001-5340-7849"
+    icon = "ai ai-orcid"
+    footer = true
+    sharethis = false
+    network = "orcid"
+[[params.social]]
+    title = "linkedin"
+    url = "https://www.linkedin.com/in/kylelang"
+    icon = "fab fa-linkedin"
+    footer = false
+    sharethis = false
+    network = "linkedin"
+#[[params.social]]
+#    title = "tumblr"
+#    url = "https://nickname.tumblr.com"
+#    icon = "fab fa-tumblr-square"
+#    footer = false
+#    sharethis = false
+#    network = "tumblr"
+[[params.social]]
+    title = "github"
+    url = "https://github.com/kylelang"
+    icon = "fab fa-github"
+    footer = true
+    sharethis = false
+    network = ""
+[[params.social]]
+    title = "email"
+    url = "mailto:k.m.lang@uu.nl"
+    icon = "fas fa-envelope-square"
+    footer = false
+    sharethis = false
+    network = "email"

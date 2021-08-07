@@ -1,0 +1,67 @@
+{{ define "main" }}
+<main id="main">
+  
+  <div class="container">
+
+    <div class="row topspace">
+      
+      <!-- Image 1 -->
+      <aside class="col-sm-4 sidebar sidebar-right">
+	
+  	<div class="nav text-left nav-side">
+  	  <br><br>
+	  <!-- 
+<img height="650px" width="322px" class="center-block" src={{ .Site.Params.aboutImage1 }}>
+-->
+	  <img width="322" class="center-block" src={{ .Site.Params.aboutImage1 }}>
+  
+	</div>
+	
+      </aside>
+      <!-- /Image 1 -->
+      
+      <!-- Text block 1 -->
+      <article class="col-sm-8 maincontent">
+        {{ .Content }}	
+      </article>
+      <!-- /Text block 1 -->
+            
+    </div>
+
+    <div class="row middlespace">
+
+      <!-- Text block 2 -->
+      <article class="col-sm-6 maincontent">
+        {{ "about_middle.md" | readFile | markdownify }}
+      </article>
+      <!-- /Text block 2 -->
+            
+      <!-- Image 2 -->
+      <aside class="col-sm-6 sidebar sidebar-right">
+	
+  	<div class="nav text-right nav-side">
+  	  <br><br>
+	  <!-- <img height="650px" class="center-block" src={{ .Site.Params.aboutImage2 }}> -->
+	  <img width="488" class="center-block" src={{ .Site.Params.aboutImage2 }}>
+	</div>
+	
+      </aside>
+      <!-- /Image 2 -->
+      
+    </div>
+
+    <div class="row bottomspace">
+
+      <!-- Text block 2 -->
+      <article class="col-sm-12 maincontent">
+        {{ "about_bottom.md" | readFile | markdownify }}
+      </article>
+      <br><br><br>
+      <!-- /Text block 2 -->
+      
+    </div>
+
+  </div>	<!-- /container -->
+  
+</main>
+{{ end }}
