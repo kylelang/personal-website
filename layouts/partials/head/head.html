@@ -34,6 +34,8 @@
 {{ $css := $styles | resources.Minify | resources.Fingerprint "sha512" }}
 <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
 
+<!-- <link rel="stylesheet" href="css/styles.css"> -->
+
 <!-- Share this --> 
 {{ if .Site.Params.customsharethis }}
 <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
