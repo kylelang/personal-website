@@ -1,4 +1,4 @@
-baseURL = "https://www.kylemlang.com/"
+baseURL = "www.kylemlang.com/"
 languageCode = "en"
 title = "Kyle M. Lang"
 theme = "hugo-initio"
