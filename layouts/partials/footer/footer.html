@@ -1,9 +1,9 @@
 <footer id="footer">
   <div class="container">
     <div class="row">
-
+      
       {{ if .Site.Params.showFooterContact }}
-      <div class="col-md-6 widget">
+      <div class="col-xs-6 widget">
 	<h3 class="widget-title">Contact</h3>
 	<div class="widget-body">
 	  <p>
@@ -20,7 +20,7 @@
       {{ end }}
 
       {{ if .Site.Params.showFooterFollowMe }}
-      <div class="col-md-6 widget">
+      <div class="col-xs-6 widget">
 	<h3 class="widget-title right">Follow me</h3>
 	<div class="widget-body">
 	  <p class="follow-me-icons">
@@ -69,17 +69,15 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-6 widget">
+      <div class="col-xs-6 widget">
 	<div class="widget-body">
-	  <!-- <p>{{ if .Site.Params.address}}{{ .Site.Params.address }}{{ end }}</p> -->
 	  <p>Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}</p>
 	</div>
       </div>
 
-      <div class="col-md-6 widget">
+      <div class="col-xs-6 widget">
 	<div class="widget-body">
 	  <p class="text-right">
-	    <!-- Copyright &copy; {{ .Site.Params.year }}, {{ .Site.Params.name }}<br> -->
 	    Design adapted from: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> - 
 	    Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a>
 	  </p>
