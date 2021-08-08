@@ -6,9 +6,11 @@
       <div class="col-md-6 widget">
 	<h3 class="widget-title">Contact</h3>
 	<div class="widget-body">
-	  <p>{{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
-	    {{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>{{ end }}
-	    <!-- <br> -->
+	  <p>
+	    {{ if .Site.Params.phone }}{{ .Site.Params.phone }}<br>{{ end }}
+	    {{ if .Site.Params.email }}
+	    <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a><br>
+	    {{ end }}
 	    {{ if .Site.Params.address }}
 	    <a href="{{ .Site.Params.addressLink }}">{{ .Site.Params.address }}</a>
 	    {{ end }}
@@ -99,11 +101,14 @@
 {{ $js := (slice $template $html5shiv | resources.Concat "js/bundle.js") | resources.Minify | resources.Fingerprint "sha512" }}
 <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
+<!--
 {{ if .Site.Params.disqus -}}
 <script id="dsq-count-scr" src="//{{ .Site.Params.disqus.site }}/count.js" async></script>
 {{ end -}}
 {{ if .Site.Params.google.analytics -}}
 {{ partial "footer/analyticstracking.html" . }}
 {{ end -}}
+-->
+
 </body>
 </html>
